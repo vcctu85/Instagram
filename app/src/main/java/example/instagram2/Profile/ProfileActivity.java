@@ -24,7 +24,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: started.");
-//        setupBottomNavigationView();
+        setupBottomNavigationView();
         setupToolBar();
     }
 
@@ -39,7 +39,7 @@ public class ProfileActivity extends AppCompatActivity {
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
     }
-
+    //this is for top bar
     private void setupToolBar() {
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.profileToolBar);
         setSupportActionBar(toolbar);
