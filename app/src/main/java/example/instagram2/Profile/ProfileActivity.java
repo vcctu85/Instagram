@@ -1,12 +1,15 @@
 package example.instagram2.Profile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -43,23 +46,15 @@ public class ProfileActivity extends AppCompatActivity {
     private void setupToolBar() {
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.profileToolBar);
         setSupportActionBar(toolbar);
-        toolbar.setOnMenuItemClickListener(new android.support.v7.widget.Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Log.d(TAG, "onMenuItemClick:clicked menu item: " + item);
-                switch (item.getItemId()) {
-                    case R.id.profileName:
-                        Log.d(TAG, "onMenuItemClick: Navigating to Profile Preferences.");
-                }
-                return false;
-            }
 
+        ImageView profileImage = (ImageView) findViewById(R.id.profileMenu);
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, AccountSettingsActivity.class);
+                startActivity(intent);
+            }
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.profile_menu, menu);
-        return true;
-    }
 }
