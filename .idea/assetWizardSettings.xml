@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/private/var/folders/mt/bjxf32bn7rl39x___f8n0tm80000gn/T/AppTranslocation/EC763886-163A-4C99-B6B9-3BBC177AD7B1/d/Android%20Studio%203.3%20Preview.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_arrow_back_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/private/var/folders/mt/bjxf32bn7rl39x___f8n0tm80000gn/T/AppTranslocation/EC763886-163A-4C99-B6B9-3BBC177AD7B1/d/Android%20Studio%203.3%20Preview.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_assignment_ind_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,9 +33,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_backarrow" />
-                                      <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="000101" />
+                                      <entry key="outputName" value="ic_username" />
+                                      <entry key="themeColor" value="296e18" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -63,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_below="@+id/linLayout"
-                android:id="@+id/linLayout2">
+                android:id="@+id/linLayout2"
+                android:layout_marginLeft="10dp">
 
                 <TextView
                     android:layout_width="match_parent"

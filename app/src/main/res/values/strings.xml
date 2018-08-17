@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Instagram2</string>
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="sign_out_fragment">Sign Out</string>
 </resources>
