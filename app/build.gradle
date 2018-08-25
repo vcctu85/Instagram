@@ -28,5 +28,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
 }
