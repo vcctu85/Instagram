@@ -38,7 +38,7 @@ public class GridImageAdapter extends ArrayAdapter<String> {
     }
 
     private static class ViewHolder {
-        ImageView image;
+        SquareImageView image;
         ProgressBar mProgressBar;
 
     }
@@ -50,9 +50,10 @@ public class GridImageAdapter extends ArrayAdapter<String> {
         if (convertView == null) {
             convertView = mInflater.inflate(layoutResource, parent, false);
             holder = new ViewHolder();
-            holder.mProgressBar = convertView.findViewById(R.id.gridImageProgressBar);
-            holder.image = convertView.findViewById(R.id.gridImageView);
+            holder.mProgressBar = (ProgressBar) convertView.findViewById(R.id.gridImageProgressBar);
+            holder.image = (SquareImageView) convertView.findViewById(R.id.gridImageView);
 
+            convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
