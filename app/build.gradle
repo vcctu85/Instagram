@@ -29,5 +29,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
 
 }
+//Firebase
+apply plugin: 'com.google.gms.google-services'
