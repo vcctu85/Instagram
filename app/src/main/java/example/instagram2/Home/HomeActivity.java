@@ -120,6 +120,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         mAuth.addAuthStateListener(mAuthListener);
+        mAuth.addAuthStateListener(mAuthListener);
+        checkCurrentUser(mAuth.getCurrentUser());
     }
 
     @Override
