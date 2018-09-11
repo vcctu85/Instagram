@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import example.instagram2.Home.HomeActivity;
 import example.instagram2.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -71,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = mEmail.getText().toString();
                 String password = mPassword.getText().toString();
 
-                if(isStringNull(email) && isStringNull(password)) {
+                if(isStringNull(email) || isStringNull(password)) {
                     Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_SHORT).show();
 
                 } else {
@@ -103,6 +104,23 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+        TextView linkSignUP = findViewById(R.id.link_signup);
+        linkSignUP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick:  navigating to register screen");
+                //navigate to another activity
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+        //if logged in, navigate to home page
+        if (mAuth.getCurrentUser() != null) {
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
     /**
      * Setup the firebase auth object

@@ -91,6 +91,7 @@
         android:text="Please wait..."
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:id="@+id/loadingPleaseWait"
         android:layout_alignBottom="@id/progressbar"
         android:layout_alignLeft="@id/progressbar"
         android:layout_alignRight="@id/progressbar"
