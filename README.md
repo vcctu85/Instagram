@@ -1,4 +1,4 @@
-# Instagram Android App
+# Instagram Android App (Personal)
 
 ## Introduction
 
